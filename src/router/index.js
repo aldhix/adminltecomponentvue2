@@ -4,6 +4,7 @@ import LayoutAdmin from "../layouts/LayoutAdmin.vue";
 import Dashboard from "../views/Dashboard.vue";
 import ExampleForm from "../views/ExampleForm.vue";
 import ExampleTab from "../views/ExampleTab.vue";
+import ExampleTable from "../views/ExampleTable.vue";
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,11 @@ const routes = [
                 path: "example/tab/:tabindex?",
                 name: "example.tab",
                 component: ExampleTab,
+            },
+            {
+                path: "example/table",
+                name: "example.table",
+                component: ExampleTable,
             },
         ],
     },

@@ -19,43 +19,64 @@
 
         <!-- Main content -->
         <content-body>
-            <!-- Default box -->
-            <col></col>
-            <card>
-                <card-header>
-                    <h3 class="card-title">Title</h3>
-                    <div class="card-tools">
-                        <button
-                            type="button"
-                            class="btn btn-tool"
-                            data-card-widget="collapse"
-                            data-toggle="tooltip"
-                            title="Collapse"
-                        >
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <button
-                            type="button"
-                            class="btn btn-tool"
-                            data-card-widget="remove"
-                            data-toggle="tooltip"
-                            title="Remove"
-                        >
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                </card-header>
-                <card-body>
-                    Start creating your amazing application!
-                </card-body>
-
-                <!-- /.card-body -->
-                <card-footer>
-                    Footer
-                </card-footer>
-                <!-- /.card-footer-->
-            </card>
-            <!-- /.card -->
+            <grid-row>
+                <grid-col class="col-lg-3 col-6">
+                    <small-box class="bg-info">
+                        <small-box-content>
+                            <h3>150</h3>
+                            <p>New Orders</p>
+                        </small-box-content>
+                        <small-box-icon>
+                            <i class="ion ion-bag"></i>
+                        </small-box-icon>
+                        <small-box-footer to="#">
+                            More Info <i class="fas fa-arrow-circle-right"></i>
+                        </small-box-footer>
+                    </small-box>
+                </grid-col>
+                <grid-col class="col-lg-3 col-6">
+                    <small-box class="bg-success">
+                        <small-box-content>
+                            <h3>53<sup style="font-size: 20px">%</sup></h3>
+                            <p>Bounce Rate</p>
+                        </small-box-content>
+                        <small-box-icon>
+                            <i class="ion ion-stats-bars"></i>
+                        </small-box-icon>
+                        <small-box-footer to="#">
+                            More Info <i class="fas fa-arrow-circle-right"></i>
+                        </small-box-footer>
+                    </small-box>
+                </grid-col>
+                <grid-col class="col-lg-3 col-6">
+                    <small-box class="bg-warning">
+                        <small-box-content>
+                            <h3>44</h3>
+                            <p>User Registrations</p>
+                        </small-box-content>
+                        <small-box-icon>
+                            <i class="ion ion-person-add"></i>
+                        </small-box-icon>
+                        <small-box-footer to="#">
+                            More Info <i class="fas fa-arrow-circle-right"></i>
+                        </small-box-footer>
+                    </small-box>
+                </grid-col>
+                <grid-col class="col-lg-3 col-6">
+                    <small-box class="bg-danger">
+                        <small-box-content>
+                            <h3>65</h3>
+                            <p>Unique Visitors</p>
+                        </small-box-content>
+                        <small-box-icon>
+                            <i class="ion ion-pie-graph"></i>
+                        </small-box-icon>
+                        <small-box-footer to="#">
+                            More Info <i class="fas fa-arrow-circle-right"></i>
+                        </small-box-footer>
+                    </small-box>
+                </grid-col>
+            </grid-row>
         </content-body>
         <!-- /.content -->
     </div>
@@ -63,22 +84,24 @@
 <script>
 import ContentBody from "../components/ContentBody.vue";
 import ContentHeader from "../components/ContentHeader.vue";
-import Card from "@/components/Card.vue";
-import CardHeader from "@/components/CardHeader.vue";
-import CardBody from "../components/CardBody.vue";
-import CardFooter from "../components/CardFooter.vue";
-import FormInput from "../components/FormInput.vue";
+import GridCol from "../components/GridCol.vue";
+import GridRow from "../components/GridRow.vue";
+import SmallBox from "../components/SmallBox.vue";
+import SmallBoxContent from "../components/SmallBoxContent.vue";
+import SmallBoxFooter from "../components/SmallBoxFooter.vue";
+import SmallBoxIcon from "../components/SmallBoxIcon.vue";
 
 export default {
     name: "Dashboard",
     components: {
         ContentHeader,
         ContentBody,
-        Card,
-        CardHeader,
-        CardBody,
-        CardFooter,
-        FormInput,
+        GridRow,
+        GridCol,
+        SmallBox,
+        SmallBoxContent,
+        SmallBoxIcon,
+        SmallBoxFooter,
     },
 };
 </script>

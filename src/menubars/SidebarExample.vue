@@ -15,6 +15,10 @@
             <i class="nav-icon far fa-circle"></i>
             <p>Tab</p>
         </nav-item>
+        <nav-item :to="{ name: 'example.table' }">
+            <i class="nav-icon far fa-circle"></i>
+            <p>Table</p>
+        </nav-item>
     </nav-item-treeview>
 </template>
 
