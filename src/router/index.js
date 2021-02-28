@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import LayoutAdmin from "../layouts/LayoutAdmin.vue";
 import Dashboard from "../views/Dashboard.vue";
 import ExampleForm from "../views/ExampleForm.vue";
+import ExampleTab from "../views/ExampleTab.vue";
 
 Vue.use(VueRouter);
 
@@ -22,9 +23,9 @@ const routes = [
                 component: ExampleForm,
             },
             {
-                path: "example/other",
-                name: "example.other",
-                component: Dashboard,
+                path: "example/tab/:tabindex?",
+                name: "example.tab",
+                component: ExampleTab,
             },
         ],
     },

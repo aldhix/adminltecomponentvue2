@@ -1,10 +1,12 @@
 <template>
     <section class="content">
-        <slot></slot>
+        <div class="container-fluid">
+            <slot></slot>
+        </div>
     </section>
 </template>
 <script>
 export default {
-    name: "Content",
+    name: "ContentBody",
 };
 </script>

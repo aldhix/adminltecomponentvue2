@@ -11,9 +11,9 @@
             <i class="nav-icon far fa-circle"></i>
             <p>Form</p>
         </nav-item>
-        <nav-item :to="{ name: 'example.other' }" exact>
+        <nav-item :to="{ name: 'example.tab' }">
             <i class="nav-icon far fa-circle"></i>
-            <p>Level 3</p>
+            <p>Tab</p>
         </nav-item>
     </nav-item-treeview>
 </template>
