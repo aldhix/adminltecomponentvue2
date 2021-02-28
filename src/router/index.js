@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import LayoutAdmin from "../layouts/LayoutAdmin.vue";
 import Dashboard from "../views/Dashboard.vue";
+import ExampleForm from "../views/ExampleForm.vue";
 
 Vue.use(VueRouter);
 
@@ -18,7 +19,7 @@ const routes = [
             {
                 path: "example",
                 name: "example",
-                component: Dashboard,
+                component: ExampleForm,
             },
             {
                 path: "example/other",

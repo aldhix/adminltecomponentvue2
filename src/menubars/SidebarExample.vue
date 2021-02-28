@@ -9,7 +9,7 @@
         </template>
         <nav-item :to="{ name: 'example' }" exact>
             <i class="nav-icon far fa-circle"></i>
-            <p>Level 2</p>
+            <p>Form</p>
         </nav-item>
         <nav-item :to="{ name: 'example.other' }" exact>
             <i class="nav-icon far fa-circle"></i>
