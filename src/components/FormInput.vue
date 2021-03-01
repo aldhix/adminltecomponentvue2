@@ -11,7 +11,7 @@
 export default {
   name: "FormInput",
   props: {
-    value: [String, Number, Boolean],
+    value: { type: [String, Number, Boolean], default: "" },
     isInvalid: {
       type: Boolean,
       default: false,

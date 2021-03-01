@@ -9,7 +9,7 @@
           <div class="card-tools form-inline">
             <button
               type="button"
-              class="btn btn-success btn-sm  mr-4"
+              class="btn btn-success btn-sm mr-2"
               @click="createItem"
             >
               [+] Create New
