@@ -5,6 +5,7 @@ import Dashboard from "../views/Dashboard.vue";
 import ExampleForm from "../views/ExampleForm.vue";
 import ExampleTab from "../views/ExampleTab.vue";
 import ExampleTable from "../views/ExampleTable.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
                 component: ExampleTable,
             },
         ],
+    },
+    {
+        path: "/login",
+        name: "login",
+        component: Login,
     },
 ];
 

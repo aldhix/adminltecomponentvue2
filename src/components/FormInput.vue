@@ -1,6 +1,7 @@
 <template>
     <input
         class="form-control"
+        :type="type"
         v-bind:value="value"
         v-on:input="$emit('input', $event.target.value)"
         :class="{ 'is-invalid': isInvalid }"
@@ -14,6 +15,10 @@ export default {
         isInvalid: {
             type: Boolean,
             default: false,
+        },
+        type: {
+            type: String,
+            default: "text",
         },
     },
 };

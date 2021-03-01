@@ -17,9 +17,9 @@
             <i class="fas fa-info-circle mr-2"></i>
             About
         </dropdown-item>
-        <dropdown-item to="#">
+        <dropdown-item to="#" @click.native="logout">
             <i class="fas fa-sign-out-alt mr-2"></i>
-            Log Out
+            Sign Out
         </dropdown-item>
     </nav-item-dropdown>
 </template>
@@ -27,11 +27,19 @@
 <script>
 import NavItemDropdown from "@/components/NavItemDropdown.vue";
 import DropdownItem from "../components/DropdownItem.vue";
+
 export default {
     name: "NavbarUser",
     components: {
         NavItemDropdown,
         DropdownItem,
+    },
+    methods: {
+        logout() {
+            window.document.location.href = this.$router.resolve({
+                name: "login",
+            }).href;
+        },
     },
 };
 </script>
